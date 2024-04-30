@@ -22,6 +22,28 @@ canvas {
   touch-action: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .screen-max-width {
   margin-inline-start: auto;
   margin-inline-end: auto;
@@ -29,6 +51,11 @@ canvas {
   max-width: 1120px;
 }
 
+.navbar-scroll {
+  top: 0;
+  position:fixed;
+  transition: top 1s;
+}
 
 @layer utilities {
   .flex-center {

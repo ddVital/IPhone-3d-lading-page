@@ -29,7 +29,7 @@ const Navbar = () => {
   }, [isVisible]);
 
   return (
-    <header id="navbar" className={`w-full py-5 sm:px-10 px-5 flex justify-between items-center z-50 bg-black/75 backdrop-blur-xl absolut ${isVisible ? 'fixed -translate-y-40 border-b border-b-gray-300' : ''}`}>
+    <header id="navbar" className={`w-full py-5 sm:px-10 px-5 flex justify-between items-center z-50 bg-black/75 backdrop-blur-xl absolut ${isVisible ? 'navbar-scroll border-b border-b-gray-300' : '-top-5'}`}>
       <nav className='flex w-full screen-max-width justify-between'>
         <img src={appleImg} alt="Apple" width={14} height={18} />
 
